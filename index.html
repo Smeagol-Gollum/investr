@@ -1,0 +1,5 @@
+$("button").click(function(){
+   $.get("http://dev.markitondemand.com/Api/v2/Quote/jsonp?symbol=AAPL&callback=myFunction",function(data,status){
+     alert("Data: " + data + "\nStatus: " + status);
+   });
+ });
