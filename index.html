@@ -1,5 +1,7 @@
-$("button").click(function(){
-   $.get("http://dev.markitondemand.com/Api/v2/Quote/jsonp?symbol=AAPL&callback=myFunction",function(data,status){
-     alert("Data: " + data + "\nStatus: " + status);
-   });
- });
+<script>
+   $("button").click(function(){
+      $.get("http://dev.markitondemand.com/Api/v2/Quote/jsonp?symbol=AAPL&callback=myFunction",myFunction(Name,Symbol){
+        alert("Name: " + Name + "\nSymbol: " + Symbol);
+      });
+    });
+</script>
